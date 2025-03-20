@@ -22,6 +22,7 @@
             <Setter Property="BorderBrush" Value="#30363D" />
             <Setter Property="BorderThickness" Value="1" />
         </Style>
+        <SolidColorBrush x:Key="operatorColors" Color="Green"/>
     </Window.Resources>
 
     <Grid Margin="10">
@@ -73,7 +74,8 @@
             Grid.Row="1"
             Grid.Column="3"
             Click="OperationButton_Click"
-            Content="/" />
+            Content="/"
+            Background="{StaticResource operatorColors}"/>
         <Button
             x:Name="SevenButton"
             Grid.Row="2"
@@ -97,7 +99,8 @@
             Grid.Row="2"
             Grid.Column="3"
             Click="OperationButton_Click"
-            Content="*" />
+            Content="*"
+            Background="{StaticResource operatorColors}"/>
         <Button
             x:Name="FourButton"
             Grid.Row="3"
@@ -121,7 +124,8 @@
             Grid.Row="3"
             Grid.Column="3"
             Click="OperationButton_Click"
-            Content="-" />
+            Content="-" 
+            Background="{StaticResource operatorColors}"/>
         <Button
             x:Name="OneButton"
             Grid.Row="4"
@@ -145,7 +149,8 @@
             Grid.Row="4"
             Grid.Column="3"
             Click="OperationButton_Click"
-            Content="+" />
+            Content="+" 
+            Background="{StaticResource operatorColors}"/>
         <Button
             x:Name="ZeroButton"
             Grid.Row="5"
@@ -163,7 +168,7 @@
             x:Name="EqualsButton"
             Grid.Row="5"
             Grid.Column="3"
-            Background="#238636"
+            Background="{StaticResource operatorColors}"
             Click="EqualsButton_Click"
             Content="=" />
     </Grid>
